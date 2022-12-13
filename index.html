@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="author" content="Anamaria Mihaela Iacob">
+     <meta name="keywords" content="Restaurant, Minerva, Mâncare, Familie, Meniu">
+    <meta name="description" content="Simte-te ca acasă în atmosfera restaurantului Minerva! Te așteptăm cu brațele deschise să poftești în localul nostru.">
+    <title>Restaurant Minerva</title>
+
+    <style>
+        .logo { 
+            height: 3rem;
+            }
+            
+        h1{
+             color:olive;
+            font-family: Josefin Sans, sans-serif;
+        }
+            
+
+        h2 {
+            background-color:olive;
+            color: white; 
+            font-family: Josefin Sans, sans-serif; 
+            margin-top:3rem;
+            padding:2rem;
+            border-radius: 15px
+            }
+
+         h3{
+            color:olive;
+            font-family: Josefin Sans, sans-serif;
+            margin: 2rem; 
+            }
+
+        p {
+            text-indent: 2rem
+            }
+
+        a {
+            color: olive
+            }
+
+        nav li a {
+            padding: 20px;
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+            }
+
+        nav li a:hover {
+            border-radius: 15px;
+            color: white;
+            background-color: olive;
+            padding: 10px;
+            }
+
+
+        footer {
+            color: white;
+            text-align:center; 
+            }
+
+        footer img.social {
+            background-color: grey;
+            border-radius: 25%
+            }
+
+        footer img.social:hover {
+            background-color: olive;
+            }
+
+    </style>
+</head>
+
+<body class="m-0">
+        
+    <!--navbar sticky-top-->
+    
+    <nav class="navbar main-navbar sticky-top navbar-dark  navbar-expand-lg  bg-black ">
+        <div class="container-fluid ">
+            <a class="navbar-brand " href="index.html"> 
+            <img class="logo d-inline-block" src="img/logo/negru-alb.png" alt="logo-ul restaurantului Minerva reprezentat de conturul unui Soare"><p class="d-inline-block">Restaurant Minerva</p></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#despre-noi" role="button" data-bs-toggle="dropdown" aria-expanded="false">Despre noi</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#poveste">Poveste</a></li>
+                            <li><a class="dropdown-item" href="#familie">Familie</a></li>
+                            <li><a class="dropdown-item" href="#local">Local</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#meniu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meniu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#fel-principal">Fel principal</a></li>
+                            <li><a class="dropdown-item" href="#supe">Supe</a></li>
+                            <li><a class="dropdown-item" href="#paste">Paste</a></li>
+                            <li><a class="dropdown-item" href="#pizza">Pizza</a></li>
+                            <li><a class="dropdown-item" href="#garnituri">Garnituri</a></li>
+                            <li><a class="dropdown-item" href="#bauturi">Băuturi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#date-de-contact">Date de contact</a></li>
+                            <li><a class="dropdown-item" href="#program">Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cu-dragoste">Cu dragoste</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <header>
+        <!--CARUSEL-->
+        <div id="carousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <!--POZE CARUSEL-->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="100">
+                    <img src="img/carusel/minerva-catel.jpg" class="d-block w-100" alt="bunica minerva ținând în brațe un cățeluș">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="100">
+                    <img src="img/carusel/minerva-nepoata.jpg" class="d-block w-100" alt="bunica minerva alături de nepoata ei">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="100">
+                    <img src="img/carusel/portret1.jpg" class="d-block w-100" alt="portret de familie în care bunica minerva este copil">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="100">
+                    <img src="img/carusel/tata-copil.jpg" class="d-block w-100" alt="un tată care își ține pe umeri copilul, ambii priviți de la spate">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="100">
+                    <img src="img/carusel/portret2.jpg" class="d-block w-100" alt="portret de familie în care bunica minerva este copil">
+                </div>
+            
+                <!--CAPTION CARUSEL-->
+                <div class="carousel-caption d-md-block bg-black opacity-50">
+                    <h1 class="fw-bold">Restaurant Minerva</h1>
+                    <p class="fst-italic">Asemenea vinului, noi nu îmbătrânim, ci doar devenim mai buni...</p>
+                  </div>
+            </div>
+            
+            <!--BUTOANE CARUSEL-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Înainte</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Următorul</span>
+            </button>
+
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <!--DESPRE-NOI-->
+
+        <h2 id="despre-noi" class="text-center">Despre noi</h2>
+
+        <div>
+            <!--poveste-->
+            <h3 id="poveste">Poveste</h3>
+            
+            <div class="row">
+                <div class="col-lg-10 col-md-6 col-sm-12">
+                    <p class="fw-bold">Se spune că dragostea e cel mai important ingredient al oricărei rețete. Al nostru știm sigur că este!</p>
+
+                    <p> Restaurantul Minerva a luat ființă în anul 1993 odată cu iubirea noastră pentru mâncare de calitate și timp petrecut alături de cei dragi. Pentru noi nu există nimic mai important decât familia și prietenii, motiv pentru care punem în bucatele noastre <span class="fw-bold">cele mai bune ingrediente</span> și <span class="fw-bold">cea mai pură dragoste</span>.</p>
+            
+                    <p>Principiile noastre urmăresc evoluția constantă a localului și satisfacerea nevoilor celor ce ne trec pragul, lucru dovedit prin câștigarea <a href="https://www.premiifb.ro/2019.html" target="_blank">premiului Horeca din 2019</a>, la categoria Premiul Publicului.</p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <img class="img-fluid rounded" src="img/oameni/Altă Minerva.jpg" alt="bunica Minerva, femeie în vârstă în timp ce își ține mâinile la gură">
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <!--familie-->
+            <h3 id="familie">Familie</h3>
+
+            <p class="fw-bold">Suntem visători...Toți!</p>
+
+            <p>Noi, cei de aici, suntem o familie, nu la figurat, ci la propriu!</p>
+
+            <p>Inaugurat de bunica Minerva, restaurantul își continuă tradiția de peste 20 ani cu ajutorul copiilor și al nepoților. Suntem o familie numeroasă, cu experiență îndelungată în acest domeniu, fapt ce vă asigură o explozie de savoare în farfurie.</p>
+
+            <p>Aspirăm la ceea ce sufletul nostru numește fericire infinită și încercăm să ne arătăm dorințele prin ceea ce punem în farfurii. Visăm... dar visăm realist! Ne dorim cele mai evoluate standarde și lucrăm în această privință. „Minerva” este despre <span class="fw-bold">evoluție</span> și despre <span class="fw-bold">pasiune</span>, îmbinate cu <span class="fw-bold">cele mai frumoase tradiții</span>.</p>
+
+            <p>Pentru noi, familia este cel mai important lucru și dorim să ne fim mereu alături. Tocmai de aceea suntem toți membri ai echipei din spatele experienței tale culinare.</p>
+        </div>
+
+        <div>
+            <!--local-->
+            <h3 id="local">Local</h3>
+           
+            <div class="text-center">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-5 col-sm-12">
+                        <img class="img-fluid rounded" src="img/local/pub.jpg" alt="interiorul localului Minerva cu mese și lumină mbientală">
+                    </div>
+
+                    <div class="col-lg-8 col-md-7 col-sm-12">
+                        <P>Amestec ordonat și feeric de <span class="fw-bold">trecut</span>, de <span class="fw-bold">prezent</span> și de <span class="fw-bold">viitor</span>... Totul regăsit în localul nostru!</P>
+                    </div>   
+                </div>
+        
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-7 col-sm-12">
+                        <p>Restaurantul Minerva e aici pentru tine, pentru cel ce dorești să găsești confortul la el <span class="fw-bold">acasă</span>.</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-12">
+                        <img class="img-fluid rounded" src="img/local/tejghea.jpg" alt="tejgheaua restaurantului Minerva în spatele căreia se află un ospătar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!--MENIU-->
+        <h2 id="meniu">Meniu</h2>
+
+        <div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!--fel principal-->
+                    <div class="card mb-3">
+                        <img src="img/mâncare/fish2.jpg" class="card-img-top" alt="Farfurie cu păstrăv la grătar și lămâie">
+                        <div class="card-body">
+                            <h3 id="fel-principal" class="card-title">Fel principal</h3>
+                            <div class="card-text">
+                                <table class="table table-borderless table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>Cotlet de porc</td>
+                                            <td class="text-end">15 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Păstrăv la grătar</td>
+                                            <td class="text-end">17 lei/100 gr</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aripioare de pui</td>
+                                            <td class="text-end">14 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Piept de pui</td>
+                                            <td class="text-end">11 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Burger de vită<span class="badge rounded-pill text-bg-secondary m-1">Ofertă</span></td>
+                                            <td class="text-end">17 lei <s>25 lei</s></td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!--supe-->
+                    <div class="card mb-3">
+                        <img src="img/mâncare/soup.jpg" class="card-img-top" alt="un bold de supă lângă care se află o solniță">
+                        <div class="card-body">
+                            <h3 id="supe" class="card-title">Supe</h3>
+                            <div class="card-text">
+                                <table class="table table-borderless table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>Supă de văcuță</td>
+                                            <td class="text-end">17 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Supă de pui<span class="badge rounded-pill text-bg-secondary m-1">Ofertă</span></td>
+                                            <td class="text-end">13 lei <s>17 lei</s></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Supă de găluște</td>
+                                            <td class="text-end">17 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Supă de legume</td>
+                                            <td class="text-end">17 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Supă cremă de roșii</td>
+                                            <td class="text-end">17 lei</td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+        
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!--paste-->
+                    <div class="card mb-3">
+                        <img src="img/mâncare/pasta.jpg" class="card-img-top" alt="O porție de paste">
+                        <div class="card-body">
+                            <h3 id="paste" class="card-title">Paste</h3>
+                            <div class="card-text">
+                                <table class="table table-borderless table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>Paste carbonara</td>
+                                            <td class="text-end">25 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paste cu sos de roșii și busuioc</td>
+                                            <td class="text-end">20 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paste cu scoici și usturoi<span class="badge rounded-pill text-bg-dark m-1">Nou</span></td>
+                                            <td class="text-end">32 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paste de post cu ciuperci</td>
+                                            <td class="text-end">23 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paste cu pesto</td>
+                                            <td class="text-end">27 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paste cu chilli</td>
+                                            <td class="text-end">23 lei</td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!--pizza-->
+                    <div class="card mb-3">
+                        <img src="img/mâncare/pizza1.jpg" class="card-img-top" alt="un platou pe care se află o pizza întreagă">
+                        <div class="card-body">
+                            <h3 id="pizza" class="card-title">Pizza</h3>
+                            <div class="card-text">
+                                <table class="table table-borderless table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>Quatro Stagionni</td>
+                                            <td class="text-end">32lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prosciutto e Funghi</td>
+                                            <td class="text-end">35 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Capriciosa</td>
+                                            <td class="text-end">33 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mexicana</td>
+                                            <td class="text-end">36 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vegetariană</td>
+                                            <td class="text-end">32 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Margherita</td>
+                                            <td class="text-end">30 lei</td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+        
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!--garnituri-->
+                    <div class="card mb-3">
+                        <img src="img/mâncare/bread-chip.jpg" class="card-img-top" alt="O porție de cartofi prăjiți și lipie">
+                        <div class="card-body">
+                            <h3 id="garnituri" class="card-title">Garnituri</h3>
+                            <div class="card-text">
+                                <table class="table table-borderless table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>Cartofi prăjiți</td>
+                                            <td class="text-end">7 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cartofi la cuptor</td>
+                                            <td class="text-end">8 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cartofi țărănești</td>
+                                            <td class="text-end">7 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Piure de cartofi</td>
+                                            <td class="text-end">7 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salată de varză</td>
+                                            <td class="text-end">5 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salată de roșii</td>
+                                            <td class="text-end">5 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mămăliguță</td>
+                                            <td class="text-end">4 lei</td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!--băuturi-->
+                    <div class="card mb-3">
+                        <img src="img/mâncare/alcool.jpg" class="card-img-top" alt="trei pahare transparent pline cu băutură și gheață aflate pe fundal negru">
+                        <div class="card-body">
+                            <h3 id="bauturi" class="card-title">Băuturi</h3>
+                            <div class="card-text">
+                                <table class="table table-borderless table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>Apă plată</td>
+                                            <td class="text-end">5 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apă minerală</td>
+                                            <td class="text-end">5 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Limonadă</td>
+                                            <td class="text-end">13 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fresh de portocale</td>
+                                            <td class="text-end">15 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bere</td>
+                                            <td class="text-end">9 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cidru</td>
+                                            <td class="text-end">10 lei</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Espresso<span class="badge rounded-pill text-bg-secondary m-1">Ofertă</span></td>
+                                            <td class="text-end">10 lei <s>12 lei</s></td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 id="contact">Contact</h2>
+            <div>
+                <h3 id="date-de-contact">Date de contact</h3>
+
+                <p>Pentru programări și comenzi la domiciliu, ne puteți contacta la următorul număr de telefon: <a href="tel:+407xxxxxxxx">07xxxxxxxx</a></p>
+
+                <p>De asemenea, ne puteți contacta și la adresa de mail: <a href="mailto:restaurantminerva@mail.com"> restaurantminerva@mail.com</a></p>
+            </div>
+
+            <div>
+                <h3 id="program">Program</h3>
+
+                <table class="table table-borderless text-center  ">
+                    <tbody>
+                        <thead class="table-dark ">
+                            <tr>
+                                <td>Luni-Vineri</td>
+                                <td>Sâmbătă-Duminică</td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>7:00-21:00</td>
+                            <td>7:00-23:59</td>
+                        </tr>
+                    </tbody>      
+                </table>
+            </div>
+    </div>
+
+    <div class="container">
+        <h2 id="cu-dragoste">Cu dragoste...</h2>
+
+        
+           
+                <div class="fst-italic">
+                    <p>,,Dragii mei nepoți,</p>
+                    <p>Nimic nu vine fără efort, iar voi știți asta. Sunteți bucurie în carne și oase și sunteți ai mei. Indiferent de unde vă duce drumul vieții, nu uitați că eu sunt aici pentru voi.</p>
+                    <p>Vă aștept cu masa pusă plină de toate cele bune!</p>
+                    <p>Vă pup, bunica Minerva..."</p>
+                </div>
+            </div>
+
+           
+        
+    </div>
+
+</div>
+
+    <div>
+
+    <footer class="bg-dark text-center text-lg-start text-white">
+              
+        <div class="container p-4">
+                
+            <div class="row my-4">
+                  
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+                    <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                        <a href="index.html">
+                            <img src="img/logo/alb-verde.png" height="80px"  alt="logo-ul restaurantului Minerva reprezentat de un Soare">
+                        </a>
+                    </div>
+          
+                    <p class="text-center">Restaurantul Minerva este despre trecut și despre viitor, despre noi și despre tine, despre tot ceea ce iubim.</p>
+            
+          
+                </div>
+                 
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <p class="text-uppercase mb-4 fw-bold">Ne găsiți pe:</p>
+                    
+                    <a href="https://www.facebook.com/" class="text-white fas fa-paw pe-3 "><img class="logo bg-white br-5" src="img/icons/facebook.png" alt="logo-ul facebook"></a>
+                      
+                    <a href="https://www.instagram.com/" class="text-white fas fa-paw pe-3 "><img class="logo bg-white br-5" src="img/icons/instagram.png" alt="logo-ul instagram"></a>
+                      
+                    <a href="https://www.twitter.com/" class="text-white fas fa-paw pe-3 "><img class="logo bg-white br-5" src="img/icons/twitter.png" alt="logo-ul twitter"></a>
+                      
+                </div>
+                  
+               
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <p class="text-uppercase mb-4 fw-bold">Contact</p>
+          
+                    <ul class="list-unstyled">
+                        <li>
+                            <p><a href="https://www.google.com/maps">strada Frumoasă, Brașov, România</a></p>
+                        </li>
+                        <li>
+                            <p><a href="tel:+407xxxxxxxx"><p>+407xxxxxxxx</p></a>
+                        </li>
+                        <li>
+                            <p><a href="mailto:restauranrminerva@mail.com"> restaurantminerva@mail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                  
+
+        
+               
+                </div>
+                
+              </div>
+              
+          
+              
+              <div class="text-center p-3 bg-black">
+                <span class="text-white">© 2022 Copyright:</span>
+                <a class="text-white" href="index.html">Restaurant Minerva</a>
+              </div>
+              
+            </footer>
+          
+          </div>
+          
+           
+            
+              
+
+            
+
+           
+
+
+            
+            
+            
+
+      
+  
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html
